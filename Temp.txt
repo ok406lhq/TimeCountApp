@@ -1,0 +1,11 @@
+onResume是在启动activity启动之后才能执行的，也就是恢复执行。程序正常启动：onCreate()->onStart()->onResume();
+正常退出：onPause()->onStop()->onDestory()
+一个Activity启动另一个Activity: onPause()->onStop(), 再返回：onRestart()->onStart()->onResume()
+程序按back 退出： onPause()->onStop()->onDestory(),再进入：onCreate()->onStart()->onResume();
+程序按home 退出： onPause()->onStop(),再进入：onRestart()->onStart()->onResume();
+这一次的jsp课程设计，由于时间急迫，所以做得有点仓促，在参考了一系列资料和同学的成品后，总算大概拿捏到了MVC架构在JSP+Servlet+JavaBean+DAO中的应用，虽然本次课程设计未能完全按照MVC架构，但是总体上还是完成了任务。
+数据库的连接果然还是有点头疼，一开始的连接就出现了MySQL数据库管理器连接不到数据库的尴尬处境，但是后来网络上的不少遇到同样麻烦的人给了我不少启发，总算，把数据库整个构建起来，连接也没什么问题了。但是还是面对数据库操作的时候还是有点生疏，查阅资料后便慢慢熟悉起来，这种东西，果然还是要多加练习才能熟练掌握。
+再者，这个课程设计实验还使用了一些可以丰富页面的工具，使得页面动态感更强烈，另外在网络中还有不少类似的工具，不得不感慨现在的网络编程趋近于共享的多态性。
+最后，总结一下，Java Web技术已经日趋完善，各种架构和技术层出不穷，希望在以后的编程学习过程中多多涉猎，也加把劲努力一下。
+
+UsageStats-包含特定时间范围内应用程式包的使用统计资料
